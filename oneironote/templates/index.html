@@ -1,20 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<style>
-    body {
-        font-family: "Roboto", sans-serif;
-        font-size: 18px;
-        background-color: #fdfdfd;
-    }
 
-    .head_text {
-        color: white;
-    }
-
-    .card {
-        box-shadow: 0 16px 48px #E3E7EB;
-    }
-</style>
 
 <header class="masthead">
     <div class="overlay"></div>
@@ -45,7 +31,9 @@
             </div>
             {% endfor %}
         </div>
-        {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+        {% block sidebar %} 
+            {% include 'sidebar.html' %} 
+        {% endblock sidebar %}
     </div>
 </div>
 {%endblock%}
